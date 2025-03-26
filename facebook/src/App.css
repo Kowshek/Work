@@ -1,0 +1,29 @@
+.App {
+  background-color: #ffffff;
+}
+
+.App-header {
+  /* min-height: 10vh; */
+  display: flex;
+  flex-direction: column;
+  padding-left: 180px;
+  padding-top: 170px;
+  padding-right: 150px;
+
+  /* flex-wrap: wrap;
+  display: flex; */
+}
+
+.App-header H1 {
+  color: #1c69f8;
+  font-size: 60px;
+  margin-bottom: 3%;
+}
+
+.App-header h2 {
+  width: 450px;
+  font-weight: 500;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+

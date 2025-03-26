@@ -1,0 +1,152 @@
+form {
+  margin-top: 2px;
+  margin-left: 540px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
+form.box {
+  border: 1px solid #fefefe;
+  border-radius: 11px;
+  box-sizing: content-box;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.login:hover {
+  background-color: #0a4683;
+}
+.login {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  border-color: #0a66c2;
+  background-color: #0a66c2;
+  border-width: 0ch;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.google:hover{
+  border: 2px black solid;
+}
+.google {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000d5;
+  background-color: #f5f5f5#f5f5f5;
+  color: rgb(73, 73, 73);
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.apple:hover{
+  border: 2px black solid;
+}
+.apple {
+  padding: 10px 60px;
+  margin-top: 10px;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000d5;
+  background-color: #f5f5f5;
+  color: rgb(73, 73, 73);
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.forgotpass {
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+input:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: rgb(207, 207, 207);
+  font-size: 17px;
+  border-color: black;
+  border-top-style: outset;
+  border-left-style: outset;
+  padding-left: 15px;
+  padding-top: 5px;
+  /* padding-bottom: 5px; */
+}
+.password {
+  border-color: black;
+}
+
+.username {
+  margin-bottom: 10px;
+}
+.pass{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-weight: 500;
+  margin: 2px;
+  padding: 2px;
+  padding-top: 15px;
+}
+.signin-para {
+  margin: 2px;
+  margin-bottom: 30px;
+  padding: 2px;
+}
+
+img {
+  margin-left: 45px;
+}
+
+.error-message {
+  color: red;
+
+}
+.privacypolicy {
+  color: #0a66c2;
+}
+
+.privacy-policy {
+  font-size: small;
+  margin: 0;
+  padding: 0;
+}
+.privacy-policy2 {
+  margin: 0;
+  padding: 0;
+  font-size: small;
+}
+.newjoin {
+  justify-content: center;
+  display: flex;
+  margin-left: 350px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+.newjoin span {
+  color: #0a66c2;
+  padding-bottom: 10px;
+}
+.googleimg {
+  margin-left: 1px;
+  margin-right: 15px;
+}

@@ -1,0 +1,11 @@
+.checkbox-container {
+    top: 10px; 
+    left: 5px;
+  }
+  
+  .small-checkbox {
+    width: 15px; /* Smaller width */
+    height: 15px; /* Smaller height */
+    cursor: pointer; /* Change cursor on hover */
+    accent-color: #1c69f8; /* Optional: Change checkbox color */
+  }
