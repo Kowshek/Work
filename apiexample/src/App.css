@@ -1,0 +1,350 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+} 
+
+.loading {
+  font-size: 24px;
+  color: #333;
+}
+
+.error {
+  font-size: 20px;
+  color: red;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .header h1 {
+    font-size: 2px;
+  }
+}
+
+.App.light {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.dark-mode-toggle {
+  padding: 5px;
+}
+
+.App.light .dark-mode-toggle {
+  background-color: #202020;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: solid 1px black;
+  transition: background-color 0.9s ease;
+}
+
+.App.dark {
+  background: linear-gradient(125deg, #00070e, #00224d);
+  color: #ff0000;
+  min-height: 100vh;
+  /*really important, that one line makes the whole dark theme 
+  div stay in full page even when changes in content*/
+}
+
+.App.dark .header h1 {
+  color: #f5f5f5;
+}
+
+.App.dark .gobackButton {
+  background-color: black;
+  color: #b0e9ff;
+}
+
+.App.dark .gobackButton:hover {
+  color: white;
+}
+
+.App.dark .dark-mode-toggle-container {
+  transition: background-color 0.9s ease;
+}
+.App.dark .dark-mode-toggle {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.dark-mode-toggle {
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  cursor: grabbing;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 32px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: context-menu;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  transition: background-color 0.9s ease;
+  transition: 3.5s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(255, 255, 255);
+  transition: transform 0.5s ease;
+  content: "🌙";
+  text-align: center;
+}
+
+input:checked + .slider {
+  background-color: #ffffff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: #000000;
+  content: "🌞";
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.App h4 {
+  text-align: center;
+  margin-top: 25%;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #201d1d;
+}
+@font-face {
+  font-family: zx-spectrum;
+  src: url(Assests/the_amazing_spider_man/The-Amazing-Spider-Man.ttf);
+}
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(45deg, #ff0118 7%, #00e6f6 99%);
+}
+
+.welcome-page.fade-out {
+  opacity: 0; /* Fade out the welcome page */
+}
+
+ h1 {
+  font-size: 60px;
+  font-weight: 600;
+  /* color: #000000; */
+  color: rgb(0, 0, 0);
+  /* text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); */
+  margin-bottom: 20px;
+  font-family: zx-spectrum, sans-serif;
+  letter-spacing: 3px;
+  position: relative;
+ }
+.welcome-page p {
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  /* color: #6c6c6c; */
+  color: #000000;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+  font-family: zx-spectrum, sans-serif;
+}
+
+.start-button,
+.start-button:after {
+  /* padding: 15px 25px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #3cb340;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; */
+  /* margin-left: 10px; */
+  width: 130px;
+  height: 37px;
+  line-height: 8px;
+  font-size: 14px;
+  font-family: "Bebas Neue", sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 1px;
+  box-shadow: 8px 2px 0px #00e6f6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.start-button:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: "ALTERNATE TEXT";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    #ff013c 5%
+  );
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  clip-path: var(--slice-0);
+}
+
+.start-button:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+/* .start-button:hover {
+  background-color: #076e0c;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+} */
+
+.gobackButton {
+  border: none;
+  color: #a0a0a0;
+  background-color: #f5f5f5;
+  width: 60px;
+  height: 50px;
+  font-size: larger;
+}
+
+.gobackButton:hover {
+  color: black;
+}
+
+/* .App.dark .user-card:hover{
+  box-shadow: rgb(255, 255, 255) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
+} */
